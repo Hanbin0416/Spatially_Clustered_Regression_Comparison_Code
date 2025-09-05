@@ -31,10 +31,6 @@ This module generates **synthetic spatial datasets** with both **continuous** an
 ## Quick Start Example
 
 ```python
-from your_module import (
-    make_grid, gen_uniform, gen_corr_grf,
-    comp_y, gen_voronoi_data, dis_surface, plt_sub
-)
 
 # Generate grid
 x_spatial, y_spatial, u, v = make_grid(n_points=2500, x_min=0, x_max=10, y_min=0, y_max=10)
@@ -43,6 +39,6 @@ x_spatial, y_spatial, u, v = make_grid(n_points=2500, x_min=0, x_max=10, y_min=0
 X1, X2 = gen_corr_grf(n_points=2500, rho=0.3)
 
 # Build dataset
-df, gdf = gen_voronoi_data(n_points=2500, X1=X1, X2=X2)
+df, gdf = gen_voronoi_data(n_points=2500, X1=X1, X2=X2, K = 5)
 
 
