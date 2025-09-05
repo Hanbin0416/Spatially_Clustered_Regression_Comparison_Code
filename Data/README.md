@@ -20,10 +20,7 @@ This module generates **synthetic spatial datasets** with both **continuous** an
 
 - **comp_y**  
   Compute response values using the model:  
-  \[
-  y = a_1 X_1 + a_2 X_2 + b + \varepsilon
-  \]  
-  where noise \(\varepsilon\) is added point-wise.
+  \[y = a_1 X_1 + a_2 X_2 + b + \varepsilon\]  
 
 - **gen_voronoi_data**  
   Create Voronoi-style regions (based on random seeds or given labels), expand region coefficients, and generate response data.
